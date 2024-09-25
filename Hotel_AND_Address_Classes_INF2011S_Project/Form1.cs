@@ -16,29 +16,6 @@ namespace Hotel_AND_Address_Classes_INF2011S_Project
         {
             InitializeComponent();
         }
-        public class Address
-        {
-            public string Street { get; set; }
-            public string City { get; set; }
-            public string Province { get; set; }
-            public string PostalCode { get; set; }
-            public string Country { get; set; } = "South Africa"; // Default value
-
-            // Constructor
-            public Address(string street, string city, string province, string postalCode)
-            {
-                Street = street;
-                City = city;
-                Province = province;
-                PostalCode = postalCode;
-            }
-
-            // Override ToString method for a readable string representation
-            public override string ToString()
-            {
-                return $"{Street}, {City}, {Province}, {PostalCode}, {Country}";
-            }
-        }
 
         public class Hotel
         {
