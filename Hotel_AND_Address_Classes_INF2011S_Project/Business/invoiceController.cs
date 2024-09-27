@@ -12,16 +12,11 @@ namespace PhumlaKamnandiSystem.Business
     public class InvoiceController
     {
         private BookingController bookingController;
-        private RoomController roomController;
-        private HotelController hotelController;
-        private GuestController guestController;
 
         public InvoiceController()
         {
             bookingController = new BookingController();
-            roomController = new RoomController();
-            hotelController = new HotelController();
-            guestController = new GuestController();
+            
         }
 
         //use the find index method
