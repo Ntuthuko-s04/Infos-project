@@ -1,4 +1,4 @@
-public class Report
+public class invoice
 {
     private Room room;
     private Hotel hotel;
@@ -8,12 +8,12 @@ public class Report
     private DateTime checkOutDate;
     private DateTime dateGenerated;
 
-    public Report(Room room, Hotel hotel, Guest guest, string reportID, DateTime checkInDate, DateTime checkOutDate)
+    public invoice(Room room, Hotel hotel, Guest guest, string reportID, DateTime checkInDate, DateTime checkOutDate)
     {
         this.room = room;
         this.hotel = hotel;
         this.guest = guest;
-        this.reportID = reportID;
+        this.invoiceID = invoiceID;
         this.checkInDate = checkInDate;
         this.checkOutDate = checkOutDate;
         this.dateGenerated = DateTime; 
@@ -36,9 +36,9 @@ public class Report
         set { guest = value; }
     }
 
-    public string ReportID
+    public string invoiceID
     {
-        get { return reportID; }
+        get { return invoiceID; }
         set { reportID = value; }
     }
 
