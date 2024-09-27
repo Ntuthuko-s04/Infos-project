@@ -24,4 +24,6 @@ namespace PhumlaKamnandiSystem.Business
             guestController = new GuestController();
         }
 
+        //use the find index method
+
     }
