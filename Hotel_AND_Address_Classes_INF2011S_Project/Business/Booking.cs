@@ -11,8 +11,10 @@ public class Booking
     private string creditCardInfo;
 
     private string bookingID;
+    private DateTime begin;
+    private DateTime end;
 
-    public Booking(Hotel hotel, Guest mainGuest, Room room, string creditCardInfo, string bookingID)
+    public Booking(Hotel hotel, Guest mainGuest, Room room, string creditCardInfo, string bookingID, DateTime begin, DateTime end)
     {
         this.hotel = hotel;
         this.mainGuest = mainGuest;
@@ -20,6 +22,8 @@ public class Booking
         this.creditCardInfo = creditCardInfo;
         this.bookingID = bookingID;
         this.additionalGuests = new List<Guest>();
+        this.begin = begin;
+        this.end = end;
     }
 
     public Hotel Hotel
@@ -57,8 +61,20 @@ public class Booking
         set { bookingID = value; }
     }
 
+    public DateTime begin {
+        get { return begin; }
+        set { begin = value; }
+    }
+
+    public DateTime end {
+        get { return end; }
+        set { end = value; }
+    }
+
     public void AddAdditionalGuest(Guest guest)
     {
         additionalGuests.Add(guest);
     }
+
+    
 }
